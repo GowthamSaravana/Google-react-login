@@ -2,12 +2,6 @@ import React, { Component } from 'react'
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import "./Google.scss";
 
-
-//const CLIENT_ID = '240442920593-g47o67tcmpcqfmv4pvppffesq6rk7av5.apps.googleusercontent.com';
-
-
-
-
 class GoogleBtn extends React.Component {
   constructor() {
     super();
@@ -30,7 +24,7 @@ class GoogleBtn extends React.Component {
       <div className="App">
         {!this.state.isUserLoggedIn && (
           <GoogleLogin
-            clientId="240442920593-g47o67tcmpcqfmv4pvppffesq6rk7av5.apps.googleusercontent.com"
+            clientId=""//Add your clientID from Google OAuth
             buttonText = 'Login'
             onSuccess={this.responseGoogle}
             onFailure={this.responseGoogle}
